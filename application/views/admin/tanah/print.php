@@ -10,12 +10,22 @@
 
 <body>
     <div class="kop-surat">
-        <h2>LAPORAN HASIL INVENTARISASI (LHI) ASET DESA</h2>
-        <h2>BERUPA TANAH</h2>
-        <div class="garis"></div>
+        <img src="<?php echo base_url('assets/images/logo-kabupaten-purwakarta.png') ?>" alt="Logo Desa">
+        <div>
+            <h2>PEMERINTAH KABUPATEN PURWAKARTA</h2>
+            <h2>KECAMATAN BABAKANCIKAO</h2>
+            <h2>DESA CIGELAM</h2>
+            <P>Jalan Raya Cigelam Alternatif Cikopak - Kota Bukit Indah, Email: admin@cigelam.desa.id</P>
+            <P>Kode Pos:41151</P>
+        </div>
+    </div>
+    <div class="garis"></div>
+    <div class="kop-surat">
+        <h3>LAPORAN HASIL INVENTARISASI (LHI) ASET DESA BERUPA TANAH</h3>
+        <!-- <div class="garis"></div> -->
     </div>
     <page>
-        <table class="table table-bordered">
+        <table class="table table-bordered" style="margin-top: 10px">
             <thead>
                 <tr>
                     <th>No</th>

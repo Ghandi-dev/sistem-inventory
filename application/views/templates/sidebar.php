@@ -5,7 +5,7 @@
                 <li class="<?php echo (strtolower($title) == "dashboard") ? 'active' : ''; ?>">
                     <a href="<?=base_url('admin/')?>"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                 </li>
-                <li class="menu-title">Menu</li><!-- /.menu-title -->
+                <li class="menu-title">KATEGORI ASET</li><!-- /.menu-title -->
                 <li class="<?php echo (strtolower($title) == "tanah") ? 'active' : ''; ?>">
                     <a href="<?=base_url('admin/tanah')?>"> <i class="menu-icon ti-world"></i>Aset Tanah</a>
                 </li>

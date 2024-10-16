@@ -60,7 +60,7 @@ $(document).ready(function() {
 
     $.fn.dataTable.ext.search.push(function(settings, data, dataIndex) {
         var searchText = $('#search').val().toLowerCase();
-        var columnText = data[1].toLowerCase(); // Mengambil teks dari kolom ke-5
+        var columnText = data[1].toLowerCase();
 
         if (searchText === '' || columnText.includes(searchText)) {
             return true;

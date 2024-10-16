@@ -308,10 +308,10 @@ class Admin extends CI_Controller
         $type = strtolower($this->input->get('type'));
         $data['aset'] = $this->Aset_Model->get_data($min, $max, $nama_aset, $type);
         $file_pdf = 'aset_' . strtolower(str_replace(' ', '_', $type)) . '_' . $min . '-' . $max;
-        $paper = 'A4';
+        $paper = 'F4';
         $orientation = "landscape";
         if ($type === 'tanah') {
-            $html = $this->load->view('admin/tanah/print', $data, true);
+            $html = $this->load->view('admin/tanah/pdf', $data, true);
             $this->pdfgenerator->generate($html, $file_pdf, $paper, $orientation);
             return;
         }

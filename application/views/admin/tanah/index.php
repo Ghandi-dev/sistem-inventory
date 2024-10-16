@@ -28,9 +28,9 @@
                                 <button type="button" id="print" class="btn btn-warning"
                                     <?php echo sizeof($aset) == 0 ? 'disabled' : '' ?>><i class="fa fa-print"></i>
                                     Print</button>
-                                <button type="button" id="pdf" class="btn btn-danger"
-                                    <?php echo sizeof($aset) == 0 ? 'disabled' : '' ?>><i class="fa fa-file-pdf-o"></i>
-                                    PDF</button>
+                                <!-- <button type="button" id="pdf" class="btn btn-danger"
+                                    <?php // echo sizeof($aset) == 0 ? 'disabled' : '' ?>><i class="fa fa-file-pdf-o"></i>
+                                    PDF</button> -->
                             </div>
                             <div class="col-md-5">
                                 <div class="filter-group" style="gap: .5rem;">
@@ -49,7 +49,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 d-flex justify-content-end" style="gap: .5rem;">
+                            <!-- <div class="col-md-2 d-flex justify-content-end" style="gap: .5rem;">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> Keterangan </span>
+                                    </div>
+                                    <select name="select" id="select" class="form-control">
+                                        <option value="0">Default</option>
+                                        <option value="1">DBHP</option>
+                                        <option value="2">DD</option>
+                                        <option value="3">Bamprov</option>
+                                        <option value="3">HIBAH</option>
+                                        <option value="3">DANA BANTUAN</option>
+                                    </select>
+                                </div>
+                            </div> -->
+                            <div class="col-md-2 d-flex justify-content-end" style="gap: .5rem;">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text ti-search"></span>
@@ -87,7 +102,7 @@
                                     <td class="text-center align-middle"><?php echo $as->merk; ?></td>
                                     <td class="text-center align-middle"><?php echo rupiah($as->nilai); ?></td>
                                     <td class="text-center align-middle">
-                                        <span><?php echo anchor('admin/detail/' . $as->id . '?type=' . $title, '<div  class="btn btn-success btn-sm"><i class="fa fa-arrows-alt"></i></div>') ?>
+                                        <span><?php echo anchor('admin/detail/' . $as->id . '?type=' . $title, '<div  class="btn btn-success btn-sm"><i class="fa fa-eye"></i></div>') ?>
                                         </span>|
                                         <span><?php echo anchor('admin/edit/' . $as->id . '?type=' . $title, '<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>') ?>
                                         </span>|

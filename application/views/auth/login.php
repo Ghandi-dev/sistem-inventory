@@ -14,7 +14,7 @@
                     <form action="<?php echo site_url('auth/login'); ?>" method="post">
                         <div class="login-logo">
                             <img class="align-content"
-                                src="<?php echo base_url('assets/') ?>images/logo-desa-cigelam.png" alt="" width="100">
+                                src="<?php echo base_url('assets/') ?>images/logo-desa-cigelam.png" alt="" width="300">
                         </div>
                         <div class="form-group mt-5 ">
                             <label>Username</label>
