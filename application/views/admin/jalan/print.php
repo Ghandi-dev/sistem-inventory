@@ -18,11 +18,11 @@
             <P>Jalan Raya Cigelam Alternatif Cikopak - Kota Bukit Indah, Email: admin@cigelam.desa.id</P>
             <P>Kode Pos:41151</P>
         </div>
-        <!-- <h2>LAPORAN HASIL INVENTARISASI (LHI) ASET DESA BERUPA TANAH</h2> -->
     </div>
     <div class="garis"></div>
     <div class="kop-surat">
-        <h2>LAPORAN HASIL INVENTARISASI (LHI) ASET DESA BERUPA ASET TETAP LAINNYA</h2>
+        <h3>LAPORAN HASIL INVENTARISASI (LHI) ASET DESA BERUPA TANAH</h3>
+        <!-- <div class="garis"></div> -->
     </div>
     <page>
         <table class="table table-bordered" style="margin-top: 10px">
@@ -33,7 +33,7 @@
                     <th>Kode Aset</th>
                     <th>NUP</th>
                     <th>Tahun Perolehan</th>
-                    <th>Merk/type</th>
+                    <th>Ukuran</th>
                     <th>Nilai(Rp)</th>
                     <th>Keterangan</th>
                 </tr>
@@ -46,7 +46,7 @@
                     <td><?php echo $as->kode_aset; ?></td>
                     <td><?php echo $as->nup; ?></td>
                     <td><?php echo $as->tahun_peroleh; ?></td>
-                    <td><?php echo $as->merk; ?></td>
+                    <td><?php echo $as->ukuran; ?></td>
                     <td><?php echo rupiah($as->nilai); ?></td>
                     <td><?php echo $as->keterangan; ?></td>
                 </tr>

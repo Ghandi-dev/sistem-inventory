@@ -33,7 +33,8 @@
                     <th>Kode Aset</th>
                     <th>NUP</th>
                     <th>Tahun Perolehan</th>
-                    <th>Luas (m<sup>2</sup>)</th>
+                    <th>Merk</th>
+                    <th>Nomor Identitas</th>
                     <th>Nilai(Rp)</th>
                     <th>Keterangan</th>
                 </tr>
@@ -46,7 +47,55 @@
                     <td><?php echo $as->kode_aset; ?></td>
                     <td><?php echo $as->nup; ?></td>
                     <td><?php echo $as->tahun_peroleh; ?></td>
-                    <td><?php echo $as->luas; ?></td>
+                    <td><?php echo $as->merk; ?></td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    No. Polisi
+                                </td>
+                                <td>
+                                    :
+                                </td>
+                                <td>
+                                    <?php echo $as->no_polisi; ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    No. Mesin
+                                </td>
+                                <td>
+                                    :
+                                </td>
+                                <td>
+                                    <?php echo $as->no_mesin; ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    No. Rangka
+                                </td>
+                                <td>
+                                    :
+                                </td>
+                                <td>
+                                    <?php echo $as->no_rangka; ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    No. BPKB
+                                </td>
+                                <td>
+                                    :
+                                </td>
+                                <td>
+                                    <?php echo $as->no_bpkb; ?>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
                     <td><?php echo rupiah($as->nilai); ?></td>
                     <td><?php echo $as->keterangan; ?></td>
                 </tr>

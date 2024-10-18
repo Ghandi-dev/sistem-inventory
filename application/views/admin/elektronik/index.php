@@ -89,12 +89,13 @@
                                     <td class="text-center align-middle"><?php echo rupiah($as->nilai); ?></td>
                                     <td class="text-center align-middle"><?php echo $as->keterangan; ?></td>
                                     <td class="text-center align-middle">
-                                        <span><?php echo anchor('admin/detail/' . $as->id . '?type=' . $title, '<div  class="btn btn-success btn-sm"><i class="fa fa-eye"></i></div>') ?>
+                                        <span><?php echo anchor('aset_elektronik/detail/' . $as->id_aset, '<div  class="btn btn-success btn-sm"><i class="fa fa-eye"></i></div>') ?>
                                         </span>|
-                                        <span><?php echo anchor('admin/edit/' . $as->id . '?type=' . $title, '<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>') ?>
+                                        <span><?php echo anchor('aset_elektronik/edit/' . $as->id_aset, '<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>') ?>
                                         </span>|
                                         <span>
-                                            <div class="btn  btn-danger btn-sm delete" data-id="<?php echo $as->id; ?>">
+                                            <div class="btn  btn-danger btn-sm delete"
+                                                data-id="<?php echo $as->id_aset; ?>">
                                                 <i class=" fa fa-trash"></i>
                                             </div>
                                         </span>
@@ -107,11 +108,24 @@
                     </div>
                 </div>
             </div>
-            <?php $this->load->view('templates/modal_tambah');?>
+            <?php $this->load->view('admin/elektronik/modal_tambah');?>
         </div>
         <?php $this->load->view('templates/footer');?>
     </div>
     <?php $this->load->view('templates/script');?>
+    <script>
+    $('#print').click(function() {
+        var min = $('#min').val();
+        var max = $('#max').val();
+        var search = $('#search').val();
+        var jenis = $('#jenis').val();
+        window.open('<?php echo base_url('/aset_elektronik/print') ?>?min=' + min + '&max=' + max +
+            '&nama_aset=' +
+            search +
+            '&type=' + jenis,
+            '_blank');
+    })
+    </script>
 </body>
 
 </html>

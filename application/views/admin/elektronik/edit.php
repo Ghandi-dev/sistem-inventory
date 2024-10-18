@@ -34,7 +34,7 @@
                             <div class="card pb-1">
                                 <div class="card-header">Data aset</div>
                                 <div class="card-body">
-                                    <form id="assetForm" action="<?php echo site_url('aset_tanah/update'); ?>"
+                                    <form id="assetForm" action="<?php echo site_url('aset_elektronik/update'); ?>"
                                         method="post" enctype="multipart/form-data">
                                         <div class="mb-3">
                                             <label class="small mb-1" for="nama_aset">Nama aset</label>
@@ -70,10 +70,10 @@
                                                     value="<?php echo $aset->tahun_peroleh ?>">
                                             </div>
                                             <div class="col-md-6">
-                                                <label class="small mb-1" for="merk">Luas (m<sup>2</sup>)</label>
-                                                <input type="text" class="form-control" name="luas"
-                                                    placeholder="Masukkan luas" required
-                                                    value="<?php echo $aset->luas ?>">
+                                                <label class="small mb-1" for="merk">Merk</label>
+                                                <input type="text" class="form-control" name="merk"
+                                                    placeholder="Masukkan merk" required
+                                                    value="<?php echo $aset->merk ?>">
                                             </div>
                                         </div>
                                         <!-- Form Row-->

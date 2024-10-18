@@ -62,7 +62,7 @@
                                                     value="<?php echo $aset->tahun_peroleh ?>" readonly>
                                             </div>
                                             <div class="col-md-6">
-                                                <label class="small mb-1" for="merk">Merk/type</label>
+                                                <label class="small mb-1" for="merk">Merk</label>
                                                 <input class="form-control" name="merk" type="text"
                                                     value="<?php echo $aset->merk ?>" readonly>
                                             </div>
@@ -78,6 +78,30 @@
                                                 <label class="small mb-1" for="keterangan">Keterangan</label>
                                                 <input class="form-control" name="keterangan" type="text"
                                                     name="keterangan" value="<?php echo $aset->keterangan ?>" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="row gx-3 mb-3">
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="no_polisi">No Polisi</label>
+                                                <input class="form-control" name="no_polisi" type="text"
+                                                    value="<?php echo $aset->no_polisi ?>" readonly>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="no_mesin">No Mesin</label>
+                                                <input class="form-control" name="no_mesin" type="text"
+                                                    value="<?php echo $aset->no_mesin ?>" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="row gx-3 mb-3">
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="no_rangka">No Rangka</label>
+                                                <input class="form-control" name="no_rangka" type="text"
+                                                    value="<?php echo $aset->no_rangka ?>" readonly>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="no_bpkb">No BPKB</label>
+                                                <input class="form-control" name="no_bpkb" type="text"
+                                                    value="<?php echo $aset->no_bpkb ?>" readonly>
                                             </div>
                                         </div>
                                         <!-- Save changes button-->

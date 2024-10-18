@@ -128,13 +128,13 @@ class Admin extends CI_Controller
     ####################################
     // DATA ELEKTRONIK
     ####################################
-    public function barang_kantor()
+    public function jalan()
     {
         $table = 'tb_aset';
-        $where = array('jenis' => 'barang kantor');
-        $data['title'] = 'Barang Kantor';
+        $where = array('jenis' => 'jalan');
+        $data['title'] = 'Jalan';
         $data['aset'] = $this->Aset_Model->get($table, $where);
-        $this->load->view('admin/barang_kantor/index', $data);
+        $this->load->view('admin/jalan/index', $data);
     }
     ####################################
     // END DATA ELEKTRONIK
@@ -261,10 +261,10 @@ class Admin extends CI_Controller
 
     public function edit($id)
     {
-        $type = strtolower($this->input->get('type'));
+        $type = 'tanah';
         $data['title'] = $type;
-        $where = array('id' => $id);
-        $data['aset'] = ($this->Aset_Model->get('tb_aset', $where))[0];
+        $where = array('tb_aset.id' => $id, 'jenis' => $type);
+        $data['aset'] = ($this->Aset_Model->get('tb_aset', $where));
         if ($type === 'tanah') {
             $this->load->view('admin/tanah/edit', $data);
             return;
@@ -276,8 +276,8 @@ class Admin extends CI_Controller
     {
         $type = strtolower($this->input->get('type'));
         $data['title'] = $type;
-        $where = array('id' => $id);
-        $data['aset'] = ($this->Aset_Model->get('tb_aset', $where))[0];
+        $where = array('id_aset' => $id, 'jenis' => $type);
+        $data['aset'] = ($this->Aset_Model->get('tb_aset', $where));
         if ($type === 'tanah') {
             $this->load->view('admin/tanah/detail', $data);
             return;

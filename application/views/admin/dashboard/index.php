@@ -83,9 +83,9 @@
                                     <div class="stat-content">
                                         <div class="text-left dib">
                                             <div class="stat-text"><span
-                                                    class="count"><?php echo $count['jumlah_aset']['barang kantor']; ?></span>
+                                                    class="count"><?php echo $count['jumlah_aset']['jalan']; ?></span>
                                             </div>
-                                            <div class="stat-heading">Aset Barang Kantor</div>
+                                            <div class="stat-heading">Aset Jalan</div>
                                         </div>
                                     </div>
                                 </div>
@@ -164,9 +164,9 @@
                                     <div class="stat-content">
                                         <div class="text-left dib">
                                             <div class="stat-text">
-                                                <span><?php echo rupiah($count['total_nilai']['barang kantor']); ?></span>
+                                                <span><?php echo rupiah($count['total_nilai']['jalan']); ?></span>
                                             </div>
-                                            <div class="stat-heading">Total Nilai Aset Barang Kantor</div>
+                                            <div class="stat-heading">Total Nilai Aset Jalan</div>
                                         </div>
                                     </div>
                                 </div>

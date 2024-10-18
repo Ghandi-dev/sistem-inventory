@@ -11,7 +11,7 @@ table th, table td {
 
 /* Atur lebar masing-masing kolom */
 table th:nth-child(1), table td:nth-child(1) {
-    width: 5%; /* Kolom No */
+    width: 3%; /* Kolom No */
 }
 
 table th:nth-child(2), table td:nth-child(2) {
@@ -27,7 +27,7 @@ table th:nth-child(4), table td:nth-child(4) {
 }
 
 table th:nth-child(5), table td:nth-child(5) {
-    width: 10%; /* Kolom Tahun Perolehan */
+    width: 7%; /* Kolom Tahun Perolehan */
 }
 
 table th:nth-child(6), table td:nth-child(6) {
@@ -39,6 +39,16 @@ table th:nth-child(7), table td:nth-child(7) {
 }
 
 table th:nth-child(8), table td:nth-child(8) {
+    width: 10%; /* Kolom Keterangan */
+}
+
+.table-bordered td table tr td:nth-child(1) {
+    width: 10%; /* Kolom Keterangan */
+}
+.table-bordered td table tr td:nth-child(2) {
+    width: 2%; /* Kolom Keterangan */
+}
+.table-bordered td table tr td:nth-child(3) {
     width: 10%; /* Kolom Keterangan */
 }
 

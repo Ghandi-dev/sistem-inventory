@@ -6,36 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Print Page</title>
     <link href="<?php echo base_url('assets/css/custom/print.css') ?>" rel="stylesheet">
-    <style>
-    .kop-surat {
-        width: 100%;
-        overflow: hidden;
-        text-align: center;
-        gap: -100px;
-    }
-
-    .kop-surat img {
-        float: left;
-        width: 80px;
-        /* Adjust the width */
-        height: auto;
-        /* margin-left: 300px; */
-    }
-
-    .kop-surat div {
-        text-align: center;
-    }
-
-    .garis {
-        border-bottom: 4px solid black;
-        margin-top: 5px;
-        margin-bottom: 15px;
-    }
-
-    .content {
-        margin-top: 20px;
-    }
-    </style>
 </head>
 
 <body>
@@ -45,8 +15,8 @@
             <h2>PEMERINTAH KABUPATEN PURWAKARTA</h2>
             <h2>KECAMATAN BABAKANCIKAO</h2>
             <h2>DESA CIGELAM</h2>
-            <p>Jalan Raya Cigelam Alternatif Cikopak - Kota Bukit Indah, Email: admin@cigelam.desa.id</p>
-            <p>Kode Pos: 41151</p>
+            <P>Jalan Raya Cigelam Alternatif Cikopak - Kota Bukit Indah, Email: admin@cigelam.desa.id</P>
+            <P>Kode Pos:41151</P>
         </div>
     </div>
     <div class="garis"></div>
@@ -63,7 +33,7 @@
                     <th>Kode Aset</th>
                     <th>NUP</th>
                     <th>Tahun Perolehan</th>
-                    <th>Luas (m<sup>2</sup>)</th>
+                    <th>Merk</th>
                     <th>Nilai(Rp)</th>
                     <th>Keterangan</th>
                 </tr>

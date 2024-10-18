@@ -34,13 +34,12 @@
                             <div class="card pb-1">
                                 <div class="card-header">Data aset</div>
                                 <div class="card-body">
-                                    <form id="assetForm"
-                                        action="<?php echo site_url('admin/update?type=' . str_replace(' ', '_', $title)); ?>"
+                                    <form id="assetForm" action="<?php echo site_url('aset_jalan/update'); ?>"
                                         method="post" enctype="multipart/form-data">
                                         <div class="mb-3">
                                             <label class="small mb-1" for="nama_aset">Nama aset</label>
                                             <input class="form-control" type="text" name="id"
-                                                value="<?php echo $aset->id ?>" hidden>
+                                                value="<?php echo $aset->id_aset ?>" hidden>
                                             <input class="form-control" name="nama_aset" type="text"
                                                 placeholder="Enter your username"
                                                 value="<?php echo $aset->nama_aset ?>">
@@ -71,10 +70,10 @@
                                                     value="<?php echo $aset->tahun_peroleh ?>">
                                             </div>
                                             <div class="col-md-6">
-                                                <label class="small mb-1" for="merk">Merk/type</label>
-                                                <input type="text" class="form-control" name="merk"
-                                                    placeholder="Masukkan merk" required
-                                                    value="<?php echo $aset->merk ?>">
+                                                <label class="small mb-1" for="ukuran">Ukuran</label>
+                                                <input type="text" class="form-control" name="ukuran"
+                                                    placeholder="Masukkan ukuran" required
+                                                    value="<?php echo $aset->ukuran ?>">
                                             </div>
                                         </div>
                                         <!-- Form Row-->

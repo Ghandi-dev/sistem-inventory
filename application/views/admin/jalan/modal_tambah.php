@@ -8,7 +8,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col">
-                        <form id="assetForm" action="<?php echo site_url('aset_tanah/create'); ?>" method="post"
+                        <form id="assetForm" action="<?php echo site_url('aset_jalan/create'); ?>" method="post"
                             enctype="multipart/form-data">
                             <div class="mb-3">
                                 <label for="nama_aset" class="form-label">Nama Aset</label>
@@ -31,8 +31,8 @@
                                     placeholder="Masukkan tahun" required>
                             </div>
                             <div class="mb-3">
-                                <label for="luas" class="form-label">Luas (M<sup>2</sup>)</label>
-                                <input type="text" class="form-control" name="luas" placeholder="Masukkan luas tanah"
+                                <label for="ukuran" class="form-label">Ukuran</label>
+                                <input type="text" class="form-control" name="ukuran" placeholder="Masukkan ukuran"
                                     required>
                             </div>
                             <div class="mb-3">

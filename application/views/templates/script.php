@@ -21,15 +21,15 @@ window.onload = function() {
     // document.getElementsByClassName('container').style.animation = 'fadeIn 1s ease-in-out';
 }
 
-$('#print').click(function() {
-    var min = $('#min').val();
-    var max = $('#max').val();
-    var search = $('#search').val();
-    var jenis = $('#jenis').val();
-    window.open('<?php echo base_url('/admin/print') ?>?min=' + min + '&max=' + max + '&nama_aset=' + search +
-        '&type=' + jenis,
-        '_blank');
-})
+// $('#print').click(function() {
+//     var min = $('#min').val();
+//     var max = $('#max').val();
+//     var search = $('#search').val();
+//     var jenis = $('#jenis').val();
+//     window.open('<?php echo base_url('/admin/print') ?>?min=' + min + '&max=' + max + '&nama_aset=' + search +
+//         '&type=' + jenis,
+//         '_blank');
+// })
 $('#pdf').click(function() {
     var min = $('#min').val();
     var max = $('#max').val();

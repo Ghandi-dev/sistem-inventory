@@ -34,7 +34,7 @@
                             <div class="card pb-1">
                                 <div class="card-header">Data aset</div>
                                 <div class="card-body">
-                                    <form id="assetForm" action="<?php echo site_url('aset_tanah/update'); ?>"
+                                    <form id="assetForm" action="<?php echo site_url('aset_kendaraan/update'); ?>"
                                         method="post" enctype="multipart/form-data">
                                         <div class="mb-3">
                                             <label class="small mb-1" for="nama_aset">Nama aset</label>
@@ -70,10 +70,10 @@
                                                     value="<?php echo $aset->tahun_peroleh ?>">
                                             </div>
                                             <div class="col-md-6">
-                                                <label class="small mb-1" for="merk">Luas (m<sup>2</sup>)</label>
-                                                <input type="text" class="form-control" name="luas"
-                                                    placeholder="Masukkan luas" required
-                                                    value="<?php echo $aset->luas ?>">
+                                                <label class="small mb-1" for="merk">Merk</label>
+                                                <input type="text" class="form-control" name="merk"
+                                                    placeholder="Masukkan merk" required
+                                                    value="<?php echo $aset->merk ?>">
                                             </div>
                                         </div>
                                         <!-- Form Row-->
@@ -90,6 +90,30 @@
                                                 <input type="text" class="form-control" name="keterangan"
                                                     placeholder="Masukkan keterangan"
                                                     value="<?php echo $aset->keterangan ?>">
+                                            </div>
+                                        </div>
+                                        <div class="row gx-3 mb-3">
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="no_polisi">No Polisi</label>
+                                                <input class="form-control" name="no_polisi" type="text"
+                                                    value="<?php echo $aset->no_polisi ?>">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="no_mesin">No Mesin</label>
+                                                <input class="form-control" name="no_mesin" type="text"
+                                                    value="<?php echo $aset->no_mesin ?>">
+                                            </div>
+                                        </div>
+                                        <div class="row gx-3 mb-3">
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="no_rangka">No Rangka</label>
+                                                <input class="form-control" name="no_rangka" type="text"
+                                                    value="<?php echo $aset->no_rangka ?>">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="no_bpkb">No BPKB</label>
+                                                <input class="form-control" name="no_bpkb" type="text"
+                                                    value="<?php echo $aset->no_bpkb ?>">
                                             </div>
                                         </div>
                                         <div class="input-group mb-3">

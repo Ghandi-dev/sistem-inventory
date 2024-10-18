@@ -16,9 +16,8 @@
                 <li class="<?php echo (strtolower($title) == "kendaraan") ? 'active' : ''; ?>">
                     <a href="<?=base_url('admin/kendaraan')?>"> <i class="menu-icon ti-car"></i>Aset Kendaraan</a>
                 </li>
-                <li class="<?php echo (strtolower($title) == "barang kantor") ? 'active' : ''; ?>">
-                    <a href="<?=base_url('admin/barang_kantor')?>"> <i class="menu-icon ti-agenda"></i>Aset Barang
-                        Kantor</a>
+                <li class="<?php echo (strtolower($title) == "jalan") ? 'active' : ''; ?>">
+                    <a href="<?=base_url('admin/jalan')?>"> <i class="menu-icon ti-agenda"></i>Aset Jalan</a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->

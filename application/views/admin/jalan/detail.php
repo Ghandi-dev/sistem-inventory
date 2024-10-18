@@ -62,9 +62,9 @@
                                                     value="<?php echo $aset->tahun_peroleh ?>" readonly>
                                             </div>
                                             <div class="col-md-6">
-                                                <label class="small mb-1" for="merk">Luas (m<sup>2</sup>)</label>
-                                                <input class="form-control" name="merk" type="text"
-                                                    value="<?php echo $aset->luas ?>" readonly>
+                                                <label class="small mb-1" for="ukuran">Ukuran</label>
+                                                <input class="form-control" name="ukuran" type="text"
+                                                    value="<?php echo $aset->ukuran ?>" readonly>
                                             </div>
                                         </div>
                                         <!-- Form Row-->

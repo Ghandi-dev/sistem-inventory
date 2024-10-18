@@ -6,10 +6,10 @@
                 <h2 class="modal-title font-weight-bold">Tambah data aset</h2>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col">
-                        <form id="assetForm" action="<?php echo site_url('aset_tanah/create'); ?>" method="post"
-                            enctype="multipart/form-data">
+                <form id="assetForm" action="<?php echo site_url('aset_kendaraan/create'); ?>" method="post"
+                    enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-6">
                             <div class="mb-3">
                                 <label for="nama_aset" class="form-label">Nama Aset</label>
                                 <input type="text" class="form-control" name="nama_aset"
@@ -31,8 +31,8 @@
                                     placeholder="Masukkan tahun" required>
                             </div>
                             <div class="mb-3">
-                                <label for="luas" class="form-label">Luas (M<sup>2</sup>)</label>
-                                <input type="text" class="form-control" name="luas" placeholder="Masukkan luas tanah"
+                                <label for="merk" class="form-label">Merk/Type</label>
+                                <input type="text" class="form-control" name="merk" placeholder="Masukkan merk"
                                     required>
                             </div>
                             <div class="mb-3">
@@ -46,26 +46,46 @@
                                     placeholder="Masukkan keterangan" required>
                             </div>
                             <div class="mb-3">
+                                <label for="image" class="form-label">Foto</label>
                                 <div class="custom-file">
                                     <input type="file" class="form-control" id="inputImage" name="image"
                                         accept="image/*" onchange="previewImage()" required>
                                     <label class="custom-file-label" for="inputImage">Pilih file</label>
                                 </div>
-                                <!-- <label for="inputImage" class="form-label">Upload Gambar</label>
-                                <input type="file" class="form-control" id="inputImage" name="image" accept="image/*"
-                                    onchange="previewImage()" required> -->
                             </div>
-                        </form>
-                    </div>
-                    <div class="col d-flex justify-content-center align-items-center">
-                        <div id="imagePreview"
-                            style="width: 370px; height: 370px; border: 1px solid #ddd; overflow: hidden;">
-                            <img id="preview" src="<?php echo base_url('assets') ?>/images/default-image.jpg"
-                                alt="Preview Gambar" style="width: 100%; height: 100%; object-fit: cover;" />
+                        </div>
+                        <div class="col-6 ">
+                            <div class="d-flex justify-content-center">
+                                <div id="imagePreview"
+                                    style="width: 258px; height: 258px; border: 1px solid #ddd; overflow: hidden;">
+                                    <img id="preview" src="<?php echo base_url('assets') ?>/images/default-image.jpg"
+                                        alt="Preview Gambar" style="width: 100%; height: 100%; object-fit: cover;" />
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="no_polisi" class="form-label">No. Polisi</label>
+                                <input type="text" class="form-control" name="no_polisi"
+                                    placeholder="Masukkan no. polisi" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="no_mesin" class="form-label">No. Mesin</label>
+                                <input type="text" class="form-control" name="no_mesin" placeholder="Masukkan no. mesin"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="no_rangka" class="form-label">No. Rangka</label>
+                                <input type="text" class="form-control" name="no_rangka"
+                                    placeholder="Masukkan no. rangka" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="no_bpkb" class="form-label">No. BPKB</label>
+                                <input type="text" class="form-control" name="no_bpkb" placeholder="Masukkan no. BPKB"
+                                    required>
+                            </div>
                         </div>
                     </div>
+                </form>
 
-                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
